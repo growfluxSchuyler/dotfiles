@@ -13,6 +13,12 @@ ln -sb dotfiles/.bashrc_custom .
 mv .emacs.d .emacs.d~
 ln -s dotfiles/.emacs.d .
 ln -sb dotfiles/.emacs
+cd .emacs.d
+mkdir lisp
+mv ./* ./lisp
+sudo yum-config-manager --enable epel
+sudo yum install rlwrap
+
 ```
 
 See also http://github.com/startup-class/setup to install prerequisite

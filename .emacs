@@ -165,3 +165,6 @@
 (global-set-key (kbd "C-c l") 'evilnc-quick-comment-or-uncomment-to-the-line)
 (global-set-key (kbd "C-c c") 'evilnc-copy-and-comment-lines)
 (global-set-key (kbd "C-c p") 'evilnc-comment-or-uncomment-paragraphs)
+
+;; follow symlinks
+(setq vc-follow-symlinks t)
