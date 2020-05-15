@@ -1,0 +1,16 @@
+[user]
+	name = Schuyler Duffy
+[merge]
+	tool = ediff
+[credential]
+	helper = cache --timeout=28800
+
+[mergetool.ediff]
+cmd = emacs -nw -Q --eval \"(setq startup-now t)\" -l \"~/.emacs\" --eval \"(progn (setq ediff-quit-hook 'kill-emacs) (if (file-readable-p \\\"$BASE\\\") (ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\") (ediff-merge-files \\\"$LOCAL\\\" \\\"$REMOTE\\\" nil \\\"$MERGED\\\")))\"
+
+[difftool "ediff"]
+cmd = emacs --eval \"(ediff-files \\\"$LOCAL\\\" \\\"$REMOTE\\\")\"
+
+[difftool "ediffclient"]
+cmd = emacsclient --eval \"(ediff-files \\\"$LOCAL\\\" \\\"$REMOTE\\\")\"
+

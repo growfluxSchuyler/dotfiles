@@ -12,12 +12,15 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 mv .emacs.d .emacs.d~
 ln -s dotfiles/.emacs.d .
-ln -sb dotfiles/.emacs
+ln -sb dotfiles/.emacs .
+ln -sb dotfiles/.eslintrc.json .
 cd .emacs.d
 mkdir lisp
 mv ./* ./lisp
 sudo yum-config-manager --enable epel
 sudo yum install rlwrap
+npm install -g vue-language-server
+
 
 ```
 

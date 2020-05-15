@@ -1,0 +1,74 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/ec2-user/app/thingsquare_socket/" . "src/")
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/" . "functions/")
+ ("/home/ec2-user/app/thingsquare_socket/src/" . "aws/")
+ ("/home/" . "ec2-user/")
+ ("/" . "home/")
+ ("/home/ec2-user/app/" . "thingsquare_socket/")
+ ("/home/ec2-user/" . ".aws/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/ec2-user/app/test/"
+ "/home/ec2-user/dotfiles/"
+ "/home/ec2-user/"
+ "/home/ec2-user/app/thingsquare_socket/src/aws/functions/"
+ "/home/ec2-user/app/thingsquare_socket/src/aws/"
+ "/opt/aws/amazon-cloudwatch-agent/bin/"
+ "/home/ec2-user/.aws/"
+ "/home/ec2-user/app/thingsquare_socket/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "b.txt"
+ "a.txt"
+ "README.md"
+ ".gitconfig"
+ ".eslintrc.json"
+ "package.json"
+ "deviceController.js"
+ "handler.js"
+ "serverless.yml"
+ "databaseController.js"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/ec2-user/app/thingsquare_socket/" (24249 59047 298448 18000) "setup-template.sh" ".babelrc" "package.json" "package-lock.json" "src/" "./" "npm-debug.log" "ecosystem.config.js" ".env-template" "index.js" ".gitignore" "webpack.config.js" ".git/" ".env" "favicon.ico" ".remote-sync.json" "../" "README.md" "logfiles/" "cloudwatch.log" "build/" "node_modules/")
+
+ ("/home/ec2-user/.aws/" (24246 56765 527470 434000) "./" "config" "credentials~" "../" "credentials")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/" (24247 31624 359993 706000) "kinesisProducer.js" ".serverless/" "handler.js" "./" "serverless.yml" "functions/" "../")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/functions/" (24247 31375 348972 47000) "kinesisHelper.js" "databaseController.js~" "./" "databaseController.js" "deviceController.js~" "deviceController.js" "../")
+
+ ("/home/ec2-user/app/test/" (24254 46937 964668 204000) "./" "../")
+
+ ("/home/ec2-user/" (24254 45475 783140 936000) ".bash_logout" ".node-gyp/" ".gnupg/" "package.json" ".serverless/" ".bashrc_custom" ".bashrc~" ".config/" "package-lock.json" ".cache/" ".bash_eternal_history" ".serverlessrc" "./" "dotfiles/" ".babel.json" ".screenrc" ".gitconfig" "emacs-26.3/" ".eslintrc.json" ".emacs.d/" ".eslintrc.json~" ".aws/" "#test.json#" ".gitconfig~" ".bashrc" ".nvm/" "#package.json#" ".npm/" ".wget-hsts" ".bash_history" "app/" ".ansible/" ".bash_profile~" "../" ".composer/" ".bash_profile" ".ssh/" ".emacs" "node_modules/" "aws/")
+
+ ("/home/ec2-user/dotfiles/" (24254 45484 226849 664000) "package.json" ".bashrc_custom" "./" ".#package.json" ".screenrc" ".eslintrc.json" ".emacs.d/" "#README.md#" ".eslintrc.json~" ".gitignore" ".bashrc" ".git/" "../" "README.md" ".bash_profile" ".emacs~" ".emacs")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/" (24243 535 225211 436000) "server/" "logging/" "database/" "util/" "./" "client/" "thsq/" "../" "aws/")
+
+ ("/opt/aws/amazon-cloudwatch-agent/bin/" (24244 26321 454640 679000) "./" "config.json" "config-translator" "amazon-cloudwatch-agent" "amazon-cloudwatch-agent-ctl" "start-amazon-cloudwatch-agent" "amazon-cloudwatch-agent-config-wizard" "CWAGENT_VERSION" "config-downloader" "../")
+
+ ("/opt/aws/amazon-cloudwatch-agent/" (24244 25530 451102 963000) "logs/" "LICENSE" "./" "etc/" "doc/" "THIRD-PARTY-LICENSES" "var/" "RELEASE_NOTES" "../" "NOTICE" "bin/")
+
+ ("/opt/aws/" (24244 25529 163149 297000) "apitools/" "./" "amazon-cloudwatch-agent/" "credential-file-path.template" "../" "amitools/" "bin/")
+
+ ("/opt/" (24059 60134 373228 202000) "./" "../" "aws/")
+
+ ("/home/" (24111 9674 824000 0) "./" "ec2-user/" "../")
+
+ ("/home/ec2-user/aws/" (24241 56912 0 0) "./" "install" "THIRD_PARTY_LICENSES" "../" "README.md" "dist/")
+
+ ("/home/ec2-user/app/" (24242 58848 550974 602000) "./" "thingsquare_socket/" "demo/" "../")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
