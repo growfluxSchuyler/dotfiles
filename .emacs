@@ -47,7 +47,7 @@
     ("#dc322f" "#cb4b16" "#b58900" "#5b7300" "#b3c34d" "#0061a8" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (powerline centaur-tabs company dash-functional f ht lv markdown-mode s spinner lsp-mode edit-indirect mmm-mode ssass-mode vue-html-mode beacon multiple-cursors prettier-js add-node-modules-path js2-mode dash epl flycheck pkg-info yaml-mode web-mode web-beautify vue-mode use-package sws-mode solarized-theme smooth-scrolling lsp-ui json-mode jade-mode flycheck-color-mode-line exec-path-from-shell evil-nerd-commenter company-lsp)))
+    (wgrep ivy hydra dired-quick-sort drag-stuff php-mode yaml-imenu highlight-parentheses rainbow-delimiters powerline centaur-tabs company dash-functional f ht lv markdown-mode s spinner lsp-mode edit-indirect mmm-mode ssass-mode vue-html-mode beacon multiple-cursors prettier-js add-node-modules-path js2-mode dash epl flycheck pkg-info yaml-mode web-mode web-beautify vue-mode use-package sws-mode solarized-theme smooth-scrolling lsp-ui json-mode jade-mode flycheck-color-mode-line exec-path-from-shell evil-nerd-commenter company-lsp)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#eee8d5" 0.2))
@@ -90,7 +90,10 @@
  ;; If there is more than one, they won't work right.
  '(flycheck-error-list-column-number ((t (:inherit font-lock-constant-face :foreground "yellow"))))
  '(flycheck-error-list-id ((t (:inherit font-lock-type-face :foreground "red"))))
- '(flycheck-error-list-line-number ((t (:inherit font-lock-constant-face :f!loreground "yellow")))))
+ '(flycheck-error-list-line-number ((t (:inherit font-lock-constant-face :f!loreground "yellow"))))
+ '(font-lock-type-face ((t (:foreground "green"))))
+ '(ivy-minibuffer-match-face-2 ((t (:background "gold3" :foreground "red" :weight bold))))
+ '(wgrep-done-face ((t (:foreground "red")))))
  '(default ((t (:inherit autoface-default :strike-through nil :underline nil :slant normal :weight normal :height 120 :width normal :family "monaco"))))
  '(column-marker-1 ((t (:background "red"))))
  '(diff-added ((t (:foreground "cyan"))))
@@ -117,7 +120,8 @@
 ;; use web-mode for .jsx files
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
 (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
@@ -156,8 +160,8 @@
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; flycheck color mode
-;;(eval-after-load "flycheck"
-  ;;  '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
+(eval-after-load "flycheck"
+   '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
 
 ;; disable jshint since we prefer eslint checking
 (setq-default flycheck-disabled-checkers
@@ -187,19 +191,6 @@
 
 (eval-after-load 'js2-mode
   '(add-hook 'js2-mode-hook #'add-node-modules-path))
-
-;; use local eslint from node_modules before global
-;; http://emacs.stackexchange.com/questions/21205/flycheck-with-file-relative-eslint-executable
-;;(defun my/use-eslint-from-node-modules ()
-;;  (let* ((root (locate-dominating-file
-;;		(or (buffer-file-name) default-directory)
-;;		"node_modules"))
-;;	 (eslint (and root
-;;		      (expand-file-name "node_modules/eslint/bin/eslint.js"
-;;					root))))
-  ;;  (when (and eslint (file-executable-p eslint))
-    ;;  (setq-local flycheck-javascript-eslint-executable eslint))))
-;;(add-hook 'flycheck-mode-hook #'my/use-eslint-from-node-modules)
 
 ;; adjust indents for web-mode to 2 spaces
 (defun my-web-mode-hook ()
@@ -237,44 +228,6 @@
 (eval-after-load 'css-mode
     '(define-key css-mode-map (kbd "C-c b") 'web-beautify-css))
 
-(eval-after-load 'js2-mode
-  '(add-hook 'js2-mode-hook
-	     (lambda ()
-	       (add-hook 'before-save-hook 'web-beautify-js-buffer t t))))
-
-;; Or if you're using 'js-mode' (a.k.a 'javascript-mode')
-(eval-after-load 'js
-  '(add-hook 'js-mode-hook
-	     (lambda ()
-	       (add-hook 'before-save-hook 'web-beautify-js-buffer t t))))
-
-(eval-after-load 'json-mode
-  '(add-hook 'json-mode-hook
-	     (lambda ()
-	       (add-hook 'before-save-hook 'web-beautify-js-buffer t t))))
-
-(eval-after-load 'sgml-mode
-  '(add-hook 'html-mode-hook
-	     (lambda ()
-	       (add-hook 'before-save-hook 'web-beautify-html-buffer t t))))
-
-(eval-after-load 'web-mode
-  '(add-hook 'web-mode-hook
-	     (lambda ()
-	       (add-hook 'before-save-hook 'web-beautify-html-buffer t t))))
-
-(eval-after-load 'css-mode
-  '(add-hook 'css-mode-hook
-	     (lambda ()
-	       (add-hook 'before-save-hook 'web-beautify-css-buffer t t))))
-
-;; fix key binding for toggle comments
-;; (defun toggle-comment-on-line ()
-  ;; "comment or uncomment current line"
-  ;; (interactive)
-  ;; (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
-;; (global-set-key "\C-c\C-c" 'toggle-comment-on-line)
-
 (global-set-key (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
 (global-set-key (kbd "C-c l") 'evilnc-quick-comment-or-uncomment-to-the-line)
 (global-set-key (kbd "C-c c") 'evilnc-copy-and-comment-lines)
@@ -288,11 +241,8 @@
 (add-hook 'js2-mode-hook 'prettier-js-mode)
 (add-hook 'web-mode-hook 'prettier-js-mode)
 (add-hook 'vue-mode-hook 'prettier-js-mode)
-(setq prettier-js-args '(
-			 "--trailing-comma" "none"
-			 "--bracket-spacing" "true"
-			 "--single-quote" "true"
-			 ))
+(add-hook 'php-mode-hook 'prettier-js-mode)
+
 ;; multiple-cursors
 (global-set-key (kbd "C-c m c") 'mc/edit-lines)
 ;;beacon
@@ -305,3 +255,20 @@
 (global-set-key (kbd "C-<next>") 'centaur-tabs-forward)
 
 (setq centaur-tabs-set-close-button nil)
+
+;;company mode
+(add-hook 'after-init-hook 'global-company-mode)
+
+;;rainbow delimeters
+(add-hook 'js2-mode-hook #'rainbow-delimiters-mode)
+(require 'highlight-parentheses)
+
+
+;; drag stuff
+(drag-stuff-global-mode 1)
+(drag-stuff-define-keys)
+
+;;dired-quick-sort
+(dired-quick-sort-setup)
+(setq dired-quick-sort-group-directories-last ?y)
+(put 'dired-find-alternate-file 'disabled nil)

@@ -20,6 +20,8 @@ mv ./* ./lisp
 sudo yum-config-manager --enable epel
 sudo yum install rlwrap
 npm install -g vue-language-server
+npm install -g prettier
+npm install -g prettier @prettier/plugin-php
 
 
 ```

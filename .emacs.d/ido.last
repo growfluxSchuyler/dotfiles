@@ -3,7 +3,7 @@
 ;; ----- ido-last-directory-list -----
 (
  ("/home/ec2-user/app/thingsquare_socket/" . "src/")
- ("/home/ec2-user/app/thingsquare_socket/src/aws/" . "functions/")
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/" . "layers/")
  ("/home/ec2-user/app/thingsquare_socket/src/" . "aws/")
  ("/home/" . "ec2-user/")
  ("/" . "home/")
@@ -13,45 +13,59 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/ec2-user/app/test/"
- "/home/ec2-user/dotfiles/"
- "/home/ec2-user/"
- "/home/ec2-user/app/thingsquare_socket/src/aws/functions/"
  "/home/ec2-user/app/thingsquare_socket/src/aws/"
+ "/home/ec2-user/app/thingsquare_socket/src/aws/functions/"
  "/opt/aws/amazon-cloudwatch-agent/bin/"
  "/home/ec2-user/.aws/"
  "/home/ec2-user/app/thingsquare_socket/"
+ "/home/ec2-user/dotfiles/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "b.txt"
- "a.txt"
- "README.md"
- ".gitconfig"
- ".eslintrc.json"
- "package.json"
- "deviceController.js"
- "handler.js"
  "serverless.yml"
+ "handler.js"
+ "kinesisHelper.js"
  "databaseController.js"
+ "deviceController.js"
+ "database.js"
+ "config.json"
+ "credentials"
+ "README.md"
+ ".env"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/ec2-user/app/thingsquare_socket/" (24249 59047 298448 18000) "setup-template.sh" ".babelrc" "package.json" "package-lock.json" "src/" "./" "npm-debug.log" "ecosystem.config.js" ".env-template" "index.js" ".gitignore" "webpack.config.js" ".git/" ".env" "favicon.ico" ".remote-sync.json" "../" "README.md" "logfiles/" "cloudwatch.log" "build/" "node_modules/")
+ ("/home/ec2-user/" (24260 3025 674367 716000) ".bash_logout" ".node-gyp/" ".gnupg/" "package.json" ".serverless/" ".bashrc_custom" ".bashrc~" ".config/" "package-lock.json" ".cache/" ".bash_eternal_history" ".serverlessrc" "./" "dotfiles/" ".babel.json" ".screenrc" ".gitconfig" "emacs-26.3/" ".eslintrc.json" ".emacs.d/" ".eslintrc.json~" ".aws/" ".gitconfig~" ".bashrc" ".nvm/" ".npm/" ".wget-hsts" ".bash_history" "app/" ".ansible/" ".lesshst" ".bash_profile~" "../" ".composer/" ".prettierrc" ".bash_profile" ".ssh/" ".emacs" "node_modules/" "aws/")
 
- ("/home/ec2-user/.aws/" (24246 56765 527470 434000) "./" "config" "credentials~" "../" "credentials")
+ ("/var/www/html/Customer_Interface/resources/assets/js/components/devices/" (24270 59872 346525 279000) "DeviceProvision.vue" "./" ".#DeviceSettings.vue" "DeviceRouter.vue" "../" "#DeviceSettings.vue#" "DeviceList.vue" "DeviceSettings.vue")
 
- ("/home/ec2-user/app/thingsquare_socket/src/aws/" (24247 31624 359993 706000) "kinesisProducer.js" ".serverless/" "handler.js" "./" "serverless.yml" "functions/" "../")
+ ("/var/www/html/Customer_Interface/resources/assets/js/store/sensors/" (24270 58652 115402 570000) "./" "sensors.js" "../" "#sensors.js#")
+
+ ("/var/www/html/Customer_Interface/resources/assets/js/components/sensors/" (24270 58377 996578 355000) "SensorRouter.vue" "Sensor.vue" "./" "SensorChart.vue" "../")
+
+ ("/var/www/html/Customer_Interface/resources/assets/js/store/devices/" (24270 56152 447139 793000) "./" "devices.js" "../")
+
+ ("/var/www/html/Customer_Interface/resources/assets/js/components/nav/" (24270 56066 326028 281000) "./" "SpaRouter.vue" "SpaNav.vue" "../")
+
+ ("/var/www/html/Customer_Interface/" (24269 51632 630784 536000) "babel.config.js" "package.json" "database/" "package-lock.json" "get_aps.py" "readme.md" "./" "server.php" "config/" ".env-template" "phpunit.xml" "routes/" "storage/" "v8-compile-cache-0/" ".gitignore" ".gitignore.orig" "public/" "webpack.config.js" "composer.json" ".git/" "tests/" "resources/" "app/" "webpack.mix.js" "bootstrap/" ".env" ".htaccess" "../" "artisan" "vendor/" ".env.example" ".gitattributes" "README.md" "node_modules/" "composer.lock")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/" (24255 10319 359261 247000) "kinesisProducer.js" "layers/" ".serverless/" "handler.js" "./" "serverless.yml" "functions/" "../")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/layers/" (24255 10368 869556 61000) ".#serverless.yml" ".serverless/" "./" "lodash/" "serverless.yml" ".gitignore" "../")
+
+ ("/home/ec2-user/app/thingsquare_socket/" (24255 2336 125803 790000) "setup-template.sh" ".babelrc" "package.json" "package-lock.json" "src/" "./" "npm-debug.log" "ecosystem.config.js" ".env-template" "index.js" ".gitignore" "webpack.config.js" ".git/" ".env" "favicon.ico" ".remote-sync.json" "../" "README.md" "logfiles/" "cloudwatch.log" "build/" "node_modules/")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/.serverless/" (24254 62573 910273 601000) "gfx-kinesis.zip" "./" "cloudformation-template-create-stack.json" "LayerMainNodeModules.zip" "cloudformation-template-update-stack.json" "serverless-state.json" "../")
+
+ ("/home/ec2-user/dotfiles/" (24254 61793 800418 7000) "package.json" ".bashrc_custom" "./" ".#package.json" ".screenrc" ".gitconfig" ".eslintrc.json" ".emacs.d/" "#README.md#" ".eslintrc.json~" ".gitignore" ".bashrc" ".git/" "../" "README.md" ".bash_profile" ".emacs~" ".emacs")
 
  ("/home/ec2-user/app/thingsquare_socket/src/aws/functions/" (24247 31375 348972 47000) "kinesisHelper.js" "databaseController.js~" "./" "databaseController.js" "deviceController.js~" "deviceController.js" "../")
 
- ("/home/ec2-user/app/test/" (24254 46937 964668 204000) "./" "../")
+ ("/home/ec2-user/app/" (24254 48396 370487 637000) "./" "thingsquare_socket/" "demo/" "../")
 
- ("/home/ec2-user/" (24254 45475 783140 936000) ".bash_logout" ".node-gyp/" ".gnupg/" "package.json" ".serverless/" ".bashrc_custom" ".bashrc~" ".config/" "package-lock.json" ".cache/" ".bash_eternal_history" ".serverlessrc" "./" "dotfiles/" ".babel.json" ".screenrc" ".gitconfig" "emacs-26.3/" ".eslintrc.json" ".emacs.d/" ".eslintrc.json~" ".aws/" "#test.json#" ".gitconfig~" ".bashrc" ".nvm/" "#package.json#" ".npm/" ".wget-hsts" ".bash_history" "app/" ".ansible/" ".bash_profile~" "../" ".composer/" ".bash_profile" ".ssh/" ".emacs" "node_modules/" "aws/")
-
- ("/home/ec2-user/dotfiles/" (24254 45484 226849 664000) "package.json" ".bashrc_custom" "./" ".#package.json" ".screenrc" ".eslintrc.json" ".emacs.d/" "#README.md#" ".eslintrc.json~" ".gitignore" ".bashrc" ".git/" "../" "README.md" ".bash_profile" ".emacs~" ".emacs")
+ ("/home/ec2-user/.aws/" (24246 56765 527470 434000) "./" "config" "credentials~" "../" "credentials")
 
  ("/home/ec2-user/app/thingsquare_socket/src/" (24243 535 225211 436000) "server/" "logging/" "database/" "util/" "./" "client/" "thsq/" "../" "aws/")
 
@@ -66,8 +80,6 @@
  ("/home/" (24111 9674 824000 0) "./" "ec2-user/" "../")
 
  ("/home/ec2-user/aws/" (24241 56912 0 0) "./" "install" "THIRD_PARTY_LICENSES" "../" "README.md" "dist/")
-
- ("/home/ec2-user/app/" (24242 58848 550974 602000) "./" "thingsquare_socket/" "demo/" "../")
 )
 
 ;; ----- ido-unc-hosts-cache -----
