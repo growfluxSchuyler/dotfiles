@@ -35,7 +35,7 @@
   "rules": {
     "semi": 2,
       "no-console": "off",
-      "comma-dangle": "off",
+
       "react/jsx-filename-extension": "off",
       "no-unused-vars":"off",
       "import/no-dynamic-require":"off",

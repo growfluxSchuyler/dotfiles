@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/../home/ec2-user/app/thingsquare_socket/src/aws/" . "functions/")
  ("/home/ec2-user/app/thingsquare_socket/" . "src/")
  ("/home/ec2-user/app/thingsquare_socket/src/aws/" . "layers/")
  ("/home/ec2-user/app/thingsquare_socket/src/" . "aws/")
@@ -13,6 +14,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/../home/ec2-user/app/thingsquare_socket/src/aws/functions/"
  "/home/ec2-user/app/thingsquare_socket/src/aws/"
  "/home/ec2-user/app/thingsquare_socket/src/aws/functions/"
  "/opt/aws/amazon-cloudwatch-agent/bin/"
@@ -23,6 +25,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "databaseConfig.js"
  "serverless.yml"
  "handler.js"
  "kinesisHelper.js"
@@ -32,14 +35,37 @@
  "config.json"
  "credentials"
  "README.md"
- ".env"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/ec2-user/" (24260 3025 674367 716000) ".bash_logout" ".node-gyp/" ".gnupg/" "package.json" ".serverless/" ".bashrc_custom" ".bashrc~" ".config/" "package-lock.json" ".cache/" ".bash_eternal_history" ".serverlessrc" "./" "dotfiles/" ".babel.json" ".screenrc" ".gitconfig" "emacs-26.3/" ".eslintrc.json" ".emacs.d/" ".eslintrc.json~" ".aws/" ".gitconfig~" ".bashrc" ".nvm/" ".npm/" ".wget-hsts" ".bash_history" "app/" ".ansible/" ".lesshst" ".bash_profile~" "../" ".composer/" ".prettierrc" ".bash_profile" ".ssh/" ".emacs" "node_modules/" "aws/")
+ ("/home/ec2-user/app/thingsquare_socket/" (24314 4694 38545 815000) "setup-template.sh" ".babelrc" "package.json" "package-lock.json" "src/" "./" "npm-debug.log" "ecosystem.config.js" ".env~" ".env-template" "index.js" ".gitignore" "webpack.config.js" ".git/" ".env" "favicon.ico" ".remote-sync.json" "../" "README.md" "logfiles/" "cloudwatch.log" "build/" "node_modules/")
 
- ("/var/www/html/Customer_Interface/resources/assets/js/components/devices/" (24270 59872 346525 279000) "DeviceProvision.vue" "./" ".#DeviceSettings.vue" "DeviceRouter.vue" "../" "#DeviceSettings.vue#" "DeviceList.vue" "DeviceSettings.vue")
+ ("/home/ec2-user/.aws/" (24300 57215 682572 545000) "./" "config" "../" "credentials")
+
+ ("/home/ec2-user/dotfiles/" (24289 30150 703773 397000) "#.eslintrc.json#" "package.json" ".bashrc_custom" ".prettierrc~" "./" ".#package.json" ".screenrc" ".gitconfig" ".eslintrc.json" ".emacs.d/" ".gitignore" ".bashrc" ".git/" "../" "README.md" ".prettierrc" ".bash_profile" ".emacs~" ".emacs")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/" (24300 53873 996363 294000) "kinesisProducer.js" "layers/" ".serverless/" "handler.js" "./" "serverless.yml" "secrets/" "artillery/" "functions/" "../")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/layers/" (24297 4600 939437 292000) ".serverless/" "handler/" "./" "lodash/" "serverless.yml" "jsyaml/" ".gitignore" "utilpromisify/" "serverlessartillery/" "lodashmerge/" "knex/" "mysql/" "aws-sdk/" "artillery/" "mysql2/" "../" "lodashomit/")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/secrets/" (24296 61046 815558 107000) "secrets.qa.yml" "secrets.qa.yml~" "./" "../")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/aws/artillery/200605_lambda_load_test/" (24290 23408 79988 849000) "package.json" ".serverless/" "package-lock.json" "handler.js" "script.yml" "artillery-task.js" "serverless.yml~" "./" "artillery-monitoring.js" "platform-settings.js" "sampling.js" "customProcessor.js~" "serverless.yml" "planning.js" "customProcessor.js" "artillery-acceptance.js" "artillery-performance.js" "alert.js" "analysis.js" ".slsart" "script.yml~" "../" "payload/" "modes.js" "#script.yml#" ".#script.yml" "node_modules/")
+
+ ("/var/www/html/Customer_Interface/" (24282 24981 814395 74000) "babel.config.js" "package.json" "database/" "package-lock.json" "get_aps.py" "readme.md" "./" "server.php" "config/" ".env-template" "phpunit.xml" "routes/" "storage/" "v8-compile-cache-0/" ".gitignore" ".gitignore.orig" "public/" "webpack.config.js" "composer.json" ".git/" "tests/" "resources/" "app/" "webpack.mix.js" "bootstrap/" ".env" ".htaccess" "../" "artisan" "vendor/" ".env.example" ".gitattributes" "README.md" "node_modules/" "composer.lock")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/database/migrations/" (24281 21181 895901 291000) "20200604195827_add_timestamp_to_data_tables.js~" "20190311210910_GFX_SEN_VPD.js" "20200216202228_GFX_DIM_create_table.js" "./" "20190108190246_GFX-FXS-600AC-VF-NA-SV.js" "20190604174414_GFX_SEN_CO2_added_variables.js" "20181212224828_FXS_600TL_VF_SV.js" "20181215205136_GFX_SEN_CO2.js" "20190528170223_GFX_SEN_CO2_alter_voltage_type.js" "20200604195827_add_timestamp_to_data_tables.js" "../" "20191112233114_GFX_SEN_CO2_added_pressure_voc.js")
+
+ ("/home/ec2-user/app/thingsquare_socket/src/thsq/" (24281 18417 953913 758000) "maintainUsers.js" "./" "thingSquareInit.js" "_thingSquare.js" "thingSquare.js" "../")
+
+ ("/home/ec2-user/" (24281 3572 207930 283000) ".bash_logout" ".node-gyp/" ".gnupg/" "package.json" ".serverless/" ".bashrc_custom" ".bashrc~" ".config/" "package-lock.json" ".cache/" ".bash_eternal_history" ".serverlessrc" "./" "dotfiles/" ".babel.json" ".screenrc" ".gitconfig" "emacs-26.3/" ".eslintrc.json" ".emacs.d/" ".slsart-config" ".eslintrc.json~" ".aws/" ".gitconfig~" ".bashrc" ".nvm/" ".npm/" ".wget-hsts" ".bash_history" "app/" ".ansible/" ".lesshst" ".bash_profile~" "../" ".composer/" ".prettierrc" ".bash_profile" ".ssh/" ".emacs" "node_modules/" "aws/")
+
+ ("/../home/ec2-user/app/thingsquare_socket/src/aws/" (24273 7002 481930 764000) "kinesisProducer.js" "layers/" ".serverless/" "handler.js" "./" "#handler.js#" "serverless.yml" "secrets/" "functions/" "test/" "../" ".#handler.js")
+
+ ("/../home/ec2-user/app/thingsquare_socket/src/aws/functions/" (24247 31375 348972 47000) "kinesisHelper.js" "databaseController.js~" "./" "databaseController.js" "deviceController.js~" "deviceController.js" "../")
+
+ ("/var/www/html/Customer_Interface/resources/assets/js/components/devices/" (24270 62710 195512 464000) "DeviceProvision.vue" "./" "DeviceRouter.vue" "../" "DeviceList.vue" "DeviceSettings.vue")
 
  ("/var/www/html/Customer_Interface/resources/assets/js/store/sensors/" (24270 58652 115402 570000) "./" "sensors.js" "../" "#sensors.js#")
 
@@ -49,23 +75,11 @@
 
  ("/var/www/html/Customer_Interface/resources/assets/js/components/nav/" (24270 56066 326028 281000) "./" "SpaRouter.vue" "SpaNav.vue" "../")
 
- ("/var/www/html/Customer_Interface/" (24269 51632 630784 536000) "babel.config.js" "package.json" "database/" "package-lock.json" "get_aps.py" "readme.md" "./" "server.php" "config/" ".env-template" "phpunit.xml" "routes/" "storage/" "v8-compile-cache-0/" ".gitignore" ".gitignore.orig" "public/" "webpack.config.js" "composer.json" ".git/" "tests/" "resources/" "app/" "webpack.mix.js" "bootstrap/" ".env" ".htaccess" "../" "artisan" "vendor/" ".env.example" ".gitattributes" "README.md" "node_modules/" "composer.lock")
-
- ("/home/ec2-user/app/thingsquare_socket/src/aws/" (24255 10319 359261 247000) "kinesisProducer.js" "layers/" ".serverless/" "handler.js" "./" "serverless.yml" "functions/" "../")
-
- ("/home/ec2-user/app/thingsquare_socket/src/aws/layers/" (24255 10368 869556 61000) ".#serverless.yml" ".serverless/" "./" "lodash/" "serverless.yml" ".gitignore" "../")
-
- ("/home/ec2-user/app/thingsquare_socket/" (24255 2336 125803 790000) "setup-template.sh" ".babelrc" "package.json" "package-lock.json" "src/" "./" "npm-debug.log" "ecosystem.config.js" ".env-template" "index.js" ".gitignore" "webpack.config.js" ".git/" ".env" "favicon.ico" ".remote-sync.json" "../" "README.md" "logfiles/" "cloudwatch.log" "build/" "node_modules/")
-
  ("/home/ec2-user/app/thingsquare_socket/src/aws/.serverless/" (24254 62573 910273 601000) "gfx-kinesis.zip" "./" "cloudformation-template-create-stack.json" "LayerMainNodeModules.zip" "cloudformation-template-update-stack.json" "serverless-state.json" "../")
-
- ("/home/ec2-user/dotfiles/" (24254 61793 800418 7000) "package.json" ".bashrc_custom" "./" ".#package.json" ".screenrc" ".gitconfig" ".eslintrc.json" ".emacs.d/" "#README.md#" ".eslintrc.json~" ".gitignore" ".bashrc" ".git/" "../" "README.md" ".bash_profile" ".emacs~" ".emacs")
 
  ("/home/ec2-user/app/thingsquare_socket/src/aws/functions/" (24247 31375 348972 47000) "kinesisHelper.js" "databaseController.js~" "./" "databaseController.js" "deviceController.js~" "deviceController.js" "../")
 
  ("/home/ec2-user/app/" (24254 48396 370487 637000) "./" "thingsquare_socket/" "demo/" "../")
-
- ("/home/ec2-user/.aws/" (24246 56765 527470 434000) "./" "config" "credentials~" "../" "credentials")
 
  ("/home/ec2-user/app/thingsquare_socket/src/" (24243 535 225211 436000) "server/" "logging/" "database/" "util/" "./" "client/" "thsq/" "../" "aws/")
 

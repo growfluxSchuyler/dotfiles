@@ -47,7 +47,7 @@
     ("#dc322f" "#cb4b16" "#b58900" "#5b7300" "#b3c34d" "#0061a8" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (wgrep ivy hydra dired-quick-sort drag-stuff php-mode yaml-imenu highlight-parentheses rainbow-delimiters powerline centaur-tabs company dash-functional f ht lv markdown-mode s spinner lsp-mode edit-indirect mmm-mode ssass-mode vue-html-mode beacon multiple-cursors prettier-js add-node-modules-path js2-mode dash epl flycheck pkg-info yaml-mode web-mode web-beautify vue-mode use-package sws-mode solarized-theme smooth-scrolling lsp-ui json-mode jade-mode flycheck-color-mode-line exec-path-from-shell evil-nerd-commenter company-lsp)))
+    (emmet-mode wgrep ivy hydra dired-quick-sort drag-stuff php-mode yaml-imenu highlight-parentheses rainbow-delimiters powerline centaur-tabs company dash-functional f ht lv markdown-mode s spinner lsp-mode edit-indirect mmm-mode ssass-mode vue-html-mode beacon multiple-cursors prettier-js add-node-modules-path js2-mode dash epl flycheck pkg-info yaml-mode web-mode web-beautify vue-mode use-package sws-mode solarized-theme smooth-scrolling lsp-ui json-mode jade-mode flycheck-color-mode-line exec-path-from-shell evil-nerd-commenter company-lsp)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#eee8d5" 0.2))
@@ -120,6 +120,7 @@
 ;; use web-mode for .jsx files
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+
 ;; (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
 (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
@@ -272,3 +273,6 @@
 (dired-quick-sort-setup)
 (setq dired-quick-sort-group-directories-last ?y)
 (put 'dired-find-alternate-file 'disabled nil)
+
+;; emmet
+(add-hook 'vue-mode-hook 'emmet-mode)

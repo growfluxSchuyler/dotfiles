@@ -222,6 +222,9 @@ fi
 ## ------------------------------
 ## -- 3) User-customized code  --
 ## ------------------------------
+if [ -f /etc/bash_completion ]; then
+  . /etc/bash_completion
+fi
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
